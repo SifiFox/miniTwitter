@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* constant styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+
+/* button {
+    border: none;
+    color: white;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+} */
+
+
+/*              MAIN ELEMENTS            */
+
+body {
+    background: linear-gradient(to bottom, #A9C4E1, #E8EDF1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5B6469;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px rgba(156, 154, 154, 0.664);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    height: 100vh;
+    border-right: 1px rgba(0, 0, 0, 0.089) solid;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(225, 240, 247);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: #2F3B47;
+    min-height: 40px;
+}
+
+
+/*          ASIDE        */
+
+
+/* search block */
+
+aside .top {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .top h4 {
+    padding-top: 5px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+aside h4 i {
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* search */
+
+.search-block {
+    width: 70%;
+    border: 1px solid rgb(7, 58, 99);
+    border-radius: 5px;
+    padding: 4px;
+    text-decoration: none;
+    color: rgb(7, 58, 99);
+}
+
+.search-block:hover {
+    color: white;
+    background-color: rgb(7, 58, 99);
+}
+
+
+/* friend-list style */
+
+.friend-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.frend-list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.frend-list::-webkit-scrollbar-thumb {
+    background-color: rgb(175, 175, 175);
+}
+
+.friend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px rgba(0, 0, 0, 0.089) solid;
+}
+
+.friend__miniavatar {
+    align-self: center;
+}
+
+.friend__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.friend__name {
+    max-width: 150px;
+    color: rgb(39, 130, 204);
+}
+
+.friend__input {
+    font-size: 0.8rem;
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgb(39, 130, 204);
+    border-radius: 5px;
+    color: rgb(39, 130, 204);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.friend__input:hover {
+    cursor: pointer;
+    background-color: rgb(39, 130, 204);
+    color: white;
+}
+
+.bot {
+    min-height: 40px;
+    height: 40px;
+    background-color: #2F3B47;
+    display: flex;
+    justify-content: flex-end;
+}
+
+aside .bot button {
+    margin-right: 20px;
+}
+
+
+/*          HEADER        */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60px;
+    width: 100%;
+    border-bottom: 1px rgba(0, 0, 0, 0.089) solid;
+}
+
+header button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+header i {
+    font-size: 30px;
+    color: rgb(7, 58, 99);
+}
+
+
+/*          MAIN            */
+
+main article {
+    width: 100%;
+}
+
+
+/* top-block */
+
+.personality {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 170px;
+    padding: 20px 0 20px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+}
+
+.avatar img {
+    width: 150px;
+}
+
+.info h3 {
+    font-weight: 700;
+    color: rgb(83, 83, 83);
+    margin-bottom: 30px;
+}
+
+.info-data {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+}
+
+.info-data p {
+    margin-bottom: 10px;
+}
+
+.values {
+    margin-left: 20px;
+}
+
+
+/* mid-block */
+
+.main-mid {
+    display: flex;
+    width: 100%;
+    padding: 0 0 20px 0;
+    justify-content: center;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.274);
+}
+
+.twit-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 150px;
+    border-radius: 5px;
+    /* background-color: rgb(226, 238, 248); */
+    background-color: white;
+}
+
+.twit-form textarea {
+    border: none;
+    resize: none;
+    background-color: rgba(255, 235, 205, 0);
+    border-bottom: 1px rgba(0, 0, 0, 0.13) solid;
+    padding: 5px;
+    min-height: 100px;
+    outline: none;
+}
+
+.twit-form input[type="button"] {
+    padding: 2px;
+    align-self: flex-end;
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgb(39, 130, 204);
+    background-color: rgb(39, 130, 204);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/*    tape       */
+
+.tape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.friendSearch {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgb(39, 130, 204);
+    padding-top: 10px;
+}
+.friendSearch input[type='text']{
+    width: 80%;
+}
+.friendSearch input[type='button']{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(39, 130, 204);
+    border-radius: 5px;
+    color: rgb(39, 130, 204);
+    padding: 3px;
+    cursor: pointer;
+}
+.friendSearch input[type='button']:hover{
+    background-color: rgb(39, 130, 204);
+    color: white;
+}
+
+
+/*              FOOTER           */
+
+footer button {
+    margin: 15px 15px 0 0;
+    float: right;
+}
+
+
+/*          MEDIA REQUIRES          */
+
+@media (max-width: 1110px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    aside {
+        display: none;
+    }
+    header button {
+        flex-grow: 2;
+        text-align: left;
+        padding-left: 10px;
+        display: block;
+    }
+    header span {
+        flex-grow: 2;
+    }
+}

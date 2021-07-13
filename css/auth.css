@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #A9C4E1, #E8EDF1);
+    /* display: flex;
+    flex-direction: row; */
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.error {
+    color: rgb(235, 0, 0);
+    font-size: 0.75rem;
+    margin: 3px 0 20px 0;
+}
+
+
+/* logIn */
+
+.search-block {
+    width: 40vw;
+    box-sizing: border-box;
+    height: 100vh;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px;
+}
+
+.logIn input {
+    border: none;
+    outline: none;
+    font-style: italic;
+    height: 20px;
+    padding: 5px;
+    margin: 0 10px 20px 0;
+}
+
+.logIn input[type="submit"] {
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    background-color: #A9C4E1;
+}
+
+.introduction {
+    margin-top: 100px;
+    color: white;
+    font-size: 24pt;
+    text-align: left;
+}
+
+.registration {
+    margin-top: 50px;
+    color: white;
+}
+
+.registration p {
+    margin-bottom: 20px;
+}
+
+.registration a {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #A9C4E1;
+    color: black;
+    text-decoration: none;
+}
+
+.registration a:hover {
+    background-color: rgb(126, 175, 226);
+}
+
+
+/* sign up */
+
+.popup {
+    position: fixed;
+    margin: 5% 0 0 35%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    color: white;
+    background-color: black;
+    padding: 15px;
+}
+
+.popup div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup div a {
+    font-size: 24pt;
+    cursor: pointer;
+    color: white;
+}
+
+.signUp label {
+    margin-bottom: 3px;
+}
+
+.signUp {
+    font-size: 0.9rem;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+}
+
+.signUp input[type="submit"] {
+    border-radius: 5px;
+    height: 30px;
+    width: 140px;
+    background-color: #A9C4E1;
+    color: black;
+}
+
+.signUp input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}

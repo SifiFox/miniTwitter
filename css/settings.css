@@ -1,0 +1,11 @@
+#photoLoader input {
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    background-color: rgb(7, 58, 99);
+}
+
+#photoLoader input[type="submit"] {
+    padding: 9.5px;
+}
